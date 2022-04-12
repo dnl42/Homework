@@ -73,6 +73,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/icons\/arrow icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/icons\/arrow icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/icons\/Email Icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -159,6 +169,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Rectangle.jpg" : {
+      "ft" : 16384,
+      "iS" : 1309,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Rectangle.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/rooms&ameneties\/ballroom mask.jpg" : {
       "ft" : 16384,
       "iS" : 94437,
@@ -224,6 +247,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Search icon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/Search icon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -259,11 +292,43 @@
       "oAP" : "\/dev\/content\/hero-2.html",
       "oF" : 0
     },
+    "\/dev\/content\/herostripe.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/herostripe.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/planning.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/planning.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/rooms.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/rooms.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/searchbar.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/searchbar.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
