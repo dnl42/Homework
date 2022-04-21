@@ -73,21 +73,21 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/icons\/arrow icon.svg" : {
+    "\/deploy\/img\/icons\/arrowicon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/arrow icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/arrowicon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/Email Icon.svg" : {
+    "\/deploy\/img\/icons\/Email_icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/Email Icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/Email_icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -113,21 +113,21 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/Location Icon.svg" : {
+    "\/deploy\/img\/icons\/Location_Icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/Location Icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/Location_Icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/icons\/Phone Icon.svg" : {
+    "\/deploy\/img\/icons\/Phone_Icon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/icons\/Phone Icon.svg",
+      "oAP" : "\/deploy\/img\/icons\/Phone_Icon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -143,12 +143,12 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/deploy\/img\/planning\/event icon.jpg" : {
+    "\/deploy\/img\/planning\/eventicon.jpg" : {
       "ft" : 16384,
       "iS" : 14028,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/planning\/event icon.jpg",
+      "oAP" : "\/deploy\/img\/planning\/eventicon.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -156,12 +156,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/planning\/our historyicon.jpg" : {
+    "\/deploy\/img\/planning\/ourhistoryicon.jpg" : {
       "ft" : 16384,
       "iS" : 12299,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/planning\/our historyicon.jpg",
+      "oAP" : "\/deploy\/img\/planning\/ourhistoryicon.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -182,12 +182,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/rooms&ameneties\/ballroom mask.jpg" : {
+    "\/deploy\/img\/rooms&ameneties\/ballroom_mask.jpg" : {
       "ft" : 16384,
       "iS" : 94437,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/rooms&ameneties\/ballroom mask.jpg",
+      "oAP" : "\/deploy\/img\/rooms&ameneties\/ballroom_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -195,12 +195,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/rooms&ameneties\/bunk mask.jpg" : {
+    "\/deploy\/img\/rooms&ameneties\/bunk_mask.jpg" : {
       "ft" : 16384,
       "iS" : 76515,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/rooms&ameneties\/bunk mask.jpg",
+      "oAP" : "\/deploy\/img\/rooms&ameneties\/bunk_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -208,12 +208,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/rooms&ameneties\/captain mask.jpg" : {
+    "\/deploy\/img\/rooms&ameneties\/captain_mask.jpg" : {
       "ft" : 16384,
       "iS" : 73467,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/rooms&ameneties\/captain mask.jpg",
+      "oAP" : "\/deploy\/img\/rooms&ameneties\/captain_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -221,12 +221,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/rooms&ameneties\/rooftop mask.jpg" : {
+    "\/deploy\/img\/rooms&ameneties\/rooftop_mask.jpg" : {
       "ft" : 16384,
       "iS" : 80312,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/rooms&ameneties\/rooftop mask.jpg",
+      "oAP" : "\/deploy\/img\/rooms&ameneties\/rooftop_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -234,12 +234,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/rooms&ameneties\/standard mask.jpg" : {
+    "\/deploy\/img\/rooms&ameneties\/standard_mask.jpg" : {
       "ft" : 16384,
       "iS" : 71945,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/img\/rooms&ameneties\/standard mask.jpg",
+      "oAP" : "\/deploy\/img\/rooms&ameneties\/standard_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -247,11 +247,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/Search icon.svg" : {
+    "\/deploy\/img\/Searchicon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/Search icon.svg",
+      "oAP" : "\/deploy\/img\/Searchicon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
