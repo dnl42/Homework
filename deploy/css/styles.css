@@ -360,12 +360,12 @@ ul li {
   list-style: none;
 }
 
-.css-grid_global {
+.css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". header .";
 }
-.css-grid_global > div {
+.css-grid-global > div {
   grid-area: header;
 }
 
