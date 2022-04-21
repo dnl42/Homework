@@ -352,6 +352,23 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+ul li {
+  list-style: none;
+}
+
+.css-grid_global {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+.css-grid_global > div {
+  grid-area: header;
+}
+
 /* =============
     Typography
 ============= */
@@ -382,21 +399,41 @@ textarea {
 /* =============
     Header
 ============= */
+header div section img {
+  width: 100%;
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero-1
 ============= */
+#hero-1 {
+  display: grid;
+}
+#hero-1 div img {
+  width: 100%;
+}
+
 /* =============
     Hero-2
 ============= */
+#hero-2 div ul li img {
+  width: 100px;
+}
+
 /* =============
     planning
 ============= */
 /* =============
     rooms
 ============= */
+#rooms div ul {
+  display: grid;
+  gap: 24px;
+}
+
 /* =============
     searchbar
 ============= */
