@@ -409,9 +409,6 @@ header div section img {
 /* =============
     Hero-1
 ============= */
-#hero-1 {
-  display: grid;
-}
 #hero-1 div img {
   width: 100%;
 }
