@@ -169,6 +169,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/Rectangle 2.jpg" : {
+      "ft" : 16384,
+      "iS" : 1309,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Rectangle 2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/Rectangle.jpg" : {
       "ft" : 16384,
       "iS" : 1309,
@@ -346,6 +359,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
+      "oF" : 0
+    },
+    "\/dev\/index 2.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/dev\/index 2.html",
       "oF" : 0
     },
     "\/dev\/index.kit" : {
@@ -531,6 +552,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/package 2.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package 2-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/package-lock 2.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/package-lock 2-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/package-lock.json" : {
       "ft" : 524288,
