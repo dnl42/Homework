@@ -2,19 +2,37 @@
     planning
 ============= */
 
-#planning{
 
-}
 
-.planning-grid{
-    div{
-        display: grid;
-        grid-template-columns: 75% auto;
 
-        aside{
-            img{
-                width: 100%;
-            }
+
+#planning-container{
+
+    display: grid;
+    gap: 24px;
+
+    @include md{
+        grid-template-columns: 50% auto;
+    }
+
+    @include xxl{
+        grid-template-columns: auto 720px 720px auto;
+        grid-template-areas: ". history events .";
+    }
+
+    #history{
+        @include xxl{
+            grid-area: history;
         }
-    }   
+    }
+
+    #events{
+        @include xxl{
+            grid-area: events;
+        }
+    }
+
+    .planning-grid{
+        background-color: #A3A588;
+    }  
 }

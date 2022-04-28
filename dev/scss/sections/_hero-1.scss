@@ -2,6 +2,31 @@
     Hero-1
 ============= */
 
-#heroimg{
-   width: 100%;
+#hero1{
+
+    #heroimg{
+        width: 100%;
+             }
+
+    article{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
         }
+        #hero-book{
+            background-color: #AD6D47;
+
+            @include xxl{
+                grid-template-columns: auto 720px 16px;
+            }
+        }
+
+        #hero-contact{
+            background-color: #D0A064;
+
+            @include xxl{
+                grid-template-columns: 16px 720px auto;
+            } 
+        }
+    }
+}

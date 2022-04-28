@@ -7,17 +7,75 @@
 
     }
 
+    article{
 
-    ul{
-        li{
-            img{
-                width: 100%;
-            }
+        @include md{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". rooms .";
         }
-        display: grid;
-        gap: 24px;
-        
+
+        @include xxl{
+            grid-template-areas: auto 1440px auto;
+        }
+
+        ul{
+            display: grid;
+            gap: 16px;
+    
+            @include md{
+                grid-area: rooms;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas: 
+                "r1 r1 r2 r2"
+                "r3 r3 r4 r4"
+                ". r5 r5 .";
+            }
+    
+            @include lg{
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas: 
+                "r1 r1 r2 r2 r3 r3"
+                ". r4 r4 r5 r5 .";    
+            }
+
+            #r1{
+                @include md{
+                    grid-area: r1;
+                }
+            }
+    
+            #r2{
+                @include md{
+                    grid-area: r2;
+                }
+            }
+    
+            #r3{
+                @include md{
+                    grid-area: r3;
+                }
+            }
+    
+            #r4{
+                @include md{
+                    grid-area: r4;
+                }
+            }
+    
+            #r5{
+                @include md{
+                    grid-area: r5;
+                }
+            }
+    
+            li{
+                img{
+                    width: 100%;
+                }
+            }
             
+        }
     }
 
 }

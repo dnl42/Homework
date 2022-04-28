@@ -3,12 +3,56 @@
 ============= */
 
 #hero2{
+    @include xxl{
+        display: grid;
+        grid-template-columns: auto 1440px auto;
+        grid-template-areas: ". hero2 .";
+    }
         ul{
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+            }
+
+            @include lg{
+                grid-template-columns: 65% auto;
+            }
+
+            @include xl{
+                grid-template-columns: 60% auto;
+                grid-template-areas: 
+                "g1 g2"
+                "g1 g3";
+            }
+
+            @include xxl{
+                grid-area: hero2;
+            }
+
             li{
                 img{
                     width: 100%;
                 }
                 
+            }
+
+            #g1{
+                @include xl{
+                    grid-area: g1;
+                }
+            }
+
+            #g2{
+                @include xl{
+                    grid-area: g2;
+                }  
+            }
+            
+
+            #g3{
+                 @include xl{
+                    grid-area: g3;
+                }
             }
         }
 }

@@ -365,8 +365,40 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". grid .";
 }
+@media (min-width: 1400px) {
+  .css-grid-global {
+    rid-template-columns: auto 1440px auto;
+  }
+}
 .css-grid-global > div {
   grid-area: grid;
+}
+
+.show-for-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-for-md {
+    display: block;
+  }
+}
+
+.show-for-lg {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-for-lg {
+    display: block;
+  }
+}
+
+.show-for-xl {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .show-for-xl {
+    display: block;
+  }
 }
 
 /* =============
@@ -406,44 +438,212 @@ header div section img {
 /* =============
     Footer
 ============= */
+footer > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  footer > div {
+    grid-template-columns: 50% auto;
+    grid-template-areas: "footer-info newsletter" ". social";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "footer-info newsletter social";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #footer-info {
+    grid-area: footer-info;
+  }
+}
 footer > div #footer-info ul li section {
   display: grid;
   grid-template-columns: 10% auto;
+}
+@media (min-width: 768px) {
+  footer > div #newsletter {
+    grid-area: newsletter;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #social {
+    grid-area: social;
+  }
 }
 
 /* =============
     Hero-1
 ============= */
-#heroimg {
+#hero1 #heroimg {
   width: 100%;
+}
+@media (min-width: 768px) {
+  #hero1 article {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+#hero1 article #hero-book {
+  background-color: #AD6D47;
+}
+@media (min-width: 1400px) {
+  #hero1 article #hero-book {
+    grid-template-columns: auto 720px 16px;
+  }
+}
+#hero1 article #hero-contact {
+  background-color: #D0A064;
+}
+@media (min-width: 1400px) {
+  #hero1 article #hero-contact {
+    grid-template-columns: 16px 720px auto;
+  }
 }
 
 /* =============
     planning
 ============= */
-.planning-grid div {
+#planning-container {
   display: grid;
-  grid-template-columns: 75% auto;
+  gap: 24px;
 }
-.planning-grid div aside img {
-  width: 100%;
+@media (min-width: 768px) {
+  #planning-container {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1400px) {
+  #planning-container {
+    grid-template-columns: auto 720px 720px auto;
+    grid-template-areas: ". history events .";
+  }
+}
+@media (min-width: 1400px) {
+  #planning-container #history {
+    grid-area: history;
+  }
+}
+@media (min-width: 1400px) {
+  #planning-container #events {
+    grid-area: events;
+  }
+}
+#planning-container .planning-grid {
+  background-color: #A3A588;
 }
 
 /* =============
     Hero-2
 ============= */
+@media (min-width: 1400px) {
+  #hero2 {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". hero2 .";
+  }
+}
+@media (min-width: 768px) {
+  #hero2 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero2 ul {
+    grid-template-columns: 65% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+@media (min-width: 1400px) {
+  #hero2 ul {
+    grid-area: hero2;
+  }
+}
 #hero2 ul li img {
   width: 100%;
+}
+@media (min-width: 1200px) {
+  #hero2 ul #g1 {
+    grid-area: g1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul #g2 {
+    grid-area: g2;
+  }
+}
+@media (min-width: 1200px) {
+  #hero2 ul #g3 {
+    grid-area: g3;
+  }
 }
 
 /* =============
     rooms
 ============= */
-#rooms ul {
-  display: grid;
-  gap: 24px;
+@media (min-width: 768px) {
+  #rooms article {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". rooms .";
+  }
 }
-#rooms ul li img {
+@media (min-width: 1400px) {
+  #rooms article {
+    grid-template-areas: auto 1440px auto;
+  }
+}
+#rooms article ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #rooms article ul {
+    grid-area: rooms;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "r1 r1 r2 r2" "r3 r3 r4 r4" ". r5 r5 .";
+  }
+}
+@media (min-width: 1024px) {
+  #rooms article ul {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "r1 r1 r2 r2 r3 r3" ". r4 r4 r5 r5 .";
+  }
+}
+@media (min-width: 768px) {
+  #rooms article ul #r1 {
+    grid-area: r1;
+  }
+}
+@media (min-width: 768px) {
+  #rooms article ul #r2 {
+    grid-area: r2;
+  }
+}
+@media (min-width: 768px) {
+  #rooms article ul #r3 {
+    grid-area: r3;
+  }
+}
+@media (min-width: 768px) {
+  #rooms article ul #r4 {
+    grid-area: r4;
+  }
+}
+@media (min-width: 768px) {
+  #rooms article ul #r5 {
+    grid-area: r5;
+  }
+}
+#rooms article ul li img {
   width: 100%;
 }
 

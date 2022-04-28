@@ -3,9 +3,29 @@
 ============= */
 
 footer{
+
     >div{
 
+        display: grid;
+        gap: 16px;
+
+        @include md{
+            grid-template-columns: 50% auto;
+            grid-template-areas: "footer-info newsletter"
+            ". social";
+        }
+
+        @include lg{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "footer-info newsletter social";
+        }
+
         #footer-info{
+
+            @include md{
+                grid-area: footer-info;
+            }
+
             ul{
                 li{
                     section{
@@ -15,5 +35,19 @@ footer{
                 }
             }
         }
+
+        #newsletter{
+            @include md{
+                grid-area: newsletter;
+            }
+        }
+
+
+        #social{
+            @include md{
+                grid-area: social;
+            }
+        }
+
     }
 }
