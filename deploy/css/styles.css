@@ -431,6 +431,9 @@ textarea {
 /* =============
     Header
 ============= */
+header div section {
+  background-color: #52250B;
+}
 header div section img {
   width: 100%;
 }
