@@ -34,6 +34,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/header\/header.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/header\/header.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/hero1\/hero1.jpg" : {
       "ft" : 16384,
       "iS" : 151413,
@@ -256,6 +266,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/deploy\/img\/The_Jane_Ballroom_3962 1.jpg" : {
+      "ft" : 16384,
+      "iS" : 1613249,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/The_Jane_Ballroom_3962 1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/deploy\/index.html" : {
       "cB" : 0,

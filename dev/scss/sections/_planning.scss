@@ -5,3 +5,16 @@
 #planning{
 
 }
+
+.planning-grid{
+    div{
+        display: grid;
+        grid-template-columns: 75% auto;
+
+        aside{
+            img{
+                width: 100%;
+            }
+        }
+    }   
+}

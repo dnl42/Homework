@@ -1,3 +1,19 @@
 /* =============
     Footer
 ============= */
+
+footer{
+    >div{
+
+        #footer-info{
+            ul{
+                li{
+                    section{
+                        display: grid;
+                        grid-template-columns: 10% auto;
+                    }
+                }
+            }
+        }
+    }
+}

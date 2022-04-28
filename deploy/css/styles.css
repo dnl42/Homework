@@ -363,10 +363,10 @@ ul li {
 .css-grid-global {
   display: grid;
   grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". header .";
+  grid-template-areas: ". grid .";
 }
 .css-grid-global > div {
-  grid-area: header;
+  grid-area: grid;
 }
 
 /* =============
@@ -406,29 +406,45 @@ header div section img {
 /* =============
     Footer
 ============= */
+footer > div #footer-info ul li section {
+  display: grid;
+  grid-template-columns: 10% auto;
+}
+
 /* =============
     Hero-1
 ============= */
-#hero-1 div img {
+#heroimg {
+  width: 100%;
+}
+
+/* =============
+    planning
+============= */
+.planning-grid div {
+  display: grid;
+  grid-template-columns: 75% auto;
+}
+.planning-grid div aside img {
   width: 100%;
 }
 
 /* =============
     Hero-2
 ============= */
-#hero-2 div ul li img {
-  width: 100px;
+#hero2 ul li img {
+  width: 100%;
 }
 
 /* =============
-    planning
-============= */
-/* =============
     rooms
 ============= */
-#rooms div ul {
+#rooms ul {
   display: grid;
   gap: 24px;
+}
+#rooms ul li img {
+  width: 100%;
 }
 
 /* =============
