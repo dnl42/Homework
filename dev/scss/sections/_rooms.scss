@@ -19,6 +19,7 @@
             grid-template-areas: auto 1440px auto;
         }
 
+
         ul{
             display: grid;
             gap: 16px;
@@ -70,6 +71,14 @@
             }
     
             li{
+                section{
+                    h1{
+                        margin: 16px 0 24px 0;
+                    }
+                    button{
+                        margin-top: 16px;
+                    }
+                }
                 img{
                     width: 100%;
                 }

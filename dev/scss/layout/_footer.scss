@@ -32,6 +32,9 @@ footer{
                         display: grid;
                         grid-template-columns: 10% auto;
                     }
+                    h2{
+                        font-size: rem-calc(16)
+                    }
                 }
             }
         }
