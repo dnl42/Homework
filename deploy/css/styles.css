@@ -701,6 +701,9 @@ footer > div #footer-info ul li h2 {
     grid-area: r5;
   }
 }
+#rooms article ul li section {
+  display: grid;
+}
 #rooms article ul li section h1 {
   margin: 16px 0 24px 0;
 }

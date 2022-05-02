@@ -2,88 +2,92 @@
     rooms
 ============= */
 
-#rooms{
+#rooms {
     #title{
 
     }
 
-    article{
+    article {
 
-        @include md{
+        @include md {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". rooms .";
         }
 
-        @include xxl{
+        @include xxl {
             grid-template-areas: auto 1440px auto;
         }
 
 
-        ul{
+        ul {
             display: grid;
             gap: 16px;
-    
-            @include md{
+
+            @include md {
                 grid-area: rooms;
                 grid-template-columns: repeat(4, 1fr);
-                grid-template-areas: 
-                "r1 r1 r2 r2"
-                "r3 r3 r4 r4"
-                ". r5 r5 .";
-            }
-    
-            @include lg{
-                grid-template-columns: repeat(6, 1fr);
-                grid-template-areas: 
-                "r1 r1 r2 r2 r3 r3"
-                ". r4 r4 r5 r5 .";    
+                grid-template-areas:
+                    "r1 r1 r2 r2"
+                    "r3 r3 r4 r4"
+                    ". r5 r5 .";
             }
 
-            #r1{
-                @include md{
+            @include lg {
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                    "r1 r1 r2 r2 r3 r3"
+                    ". r4 r4 r5 r5 .";
+            }
+
+            #r1 {
+                @include md {
                     grid-area: r1;
                 }
             }
-    
-            #r2{
-                @include md{
+
+            #r2 {
+                @include md {
                     grid-area: r2;
                 }
             }
-    
-            #r3{
-                @include md{
+
+            #r3 {
+                @include md {
                     grid-area: r3;
                 }
             }
-    
-            #r4{
-                @include md{
+
+            #r4 {
+                @include md {
                     grid-area: r4;
                 }
             }
-    
-            #r5{
-                @include md{
+
+            #r5 {
+                @include md {
                     grid-area: r5;
                 }
             }
-    
-            li{
-                section{
-                    h1{
+
+            li {
+
+                section {
+                    display: grid;
+                    h1 {
                         margin: 16px 0 24px 0;
                     }
-                    button{
+
+                    button {
                         margin-top: 16px;
                     }
                 }
-                img{
+
+                    img {
                     width: 100%;
-                }
+                    }
             }
-            
+
         }
     }
 
