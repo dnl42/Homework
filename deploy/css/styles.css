@@ -646,6 +646,9 @@ footer > div #footer-info ul li section {
     grid-area: r5;
   }
 }
+#rooms article ul li {
+  display: grid;
+}
 #rooms article ul li img {
   width: 100%;
 }
