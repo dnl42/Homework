@@ -14,11 +14,33 @@
 
 .content-spacing{
     margin-top: 16px;
+    margin-bottom: 16px;
 
     @include md{
         margin-top: 24px;
     }
+
+    @include lg{
+        margin-top: 24px;
+    }
+
+    @include xxl{
+        margin-top: 24px;
+    }
 }
+
+.content-spacing-medium{
+    margin-top: 24px;
+
+    @include md{
+        margin-top: 36px;
+    } 
+    @include lg{
+        margin-top: 56px;
+    }
+}
+
+
 
 .css-grid-global{
     display: grid;

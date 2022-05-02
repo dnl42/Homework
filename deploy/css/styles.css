@@ -362,10 +362,35 @@ ul li {
 
 .content-spacing {
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 @media (min-width: 768px) {
   .content-spacing {
     margin-top: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-spacing {
+    margin-top: 24px;
+  }
+}
+@media (min-width: 1400px) {
+  .content-spacing {
+    margin-top: 24px;
+  }
+}
+
+.content-spacing-medium {
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .content-spacing-medium {
+    margin-top: 36px;
+  }
+}
+@media (min-width: 1024px) {
+  .content-spacing-medium {
+    margin-top: 56px;
   }
 }
 
