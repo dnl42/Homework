@@ -179,6 +179,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/planning\/eventicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/planning\/eventicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/planning\/ourhistoryicon.jpg" : {
       "ft" : 16384,
       "iS" : 12299,
@@ -191,6 +201,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/planning\/ourhistoryicon.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/planning\/ourhistoryicon.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/img\/Rectangle.jpg" : {
       "ft" : 16384,

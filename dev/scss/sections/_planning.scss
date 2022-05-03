@@ -3,10 +3,9 @@
 ============= */
 
 
-
-
-
 #planning-container{
+
+
 
     h1{
         font-size: rem-calc(32px);
@@ -46,6 +45,18 @@
     .planning-grid{
         background-color: #A3A588;
         display: grid;
-        grid-template-columns: 75% auto;
+        grid-template-columns: 75% auto ;
+
+        aside{
+            img{
+                margin-top: 10px;
+            }
+        }
     }  
+
+    .planning-spacing{
+        margin-left: 16px;
+        text-align: center;
+    }
+
 }
