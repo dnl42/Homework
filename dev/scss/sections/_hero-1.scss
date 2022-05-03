@@ -9,6 +9,15 @@
              }
 
     article{
+
+        h1{
+            font-size: rem-calc(24px);
+            @include lg{
+                font-size: rem-calc(32px);
+            }
+        }
+       
+
         @include md{
             display: grid;
             grid-template-columns: 50% auto;

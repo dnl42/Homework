@@ -401,7 +401,7 @@ ul li {
 }
 @media (min-width: 1400px) {
   .css-grid-global {
-    rid-template-columns: auto 1440px auto;
+    grid-template-columns: auto 1440px auto;
   }
 }
 .css-grid-global > div {
@@ -532,11 +532,23 @@ footer > div #footer-info ul li h2 {
   }
 }
 
+.footer-color {
+  background-color: #52250B;
+}
+
 /* =============
     Hero-1
 ============= */
 #hero1 #heroimg {
   width: 100%;
+}
+#hero1 article h1 {
+  font-size: 1.5rem;
+}
+@media (min-width: 1024px) {
+  #hero1 article h1 {
+    font-size: 2rem;
+  }
 }
 @media (min-width: 768px) {
   #hero1 article {
@@ -567,6 +579,19 @@ footer > div #footer-info ul li h2 {
 #planning-container {
   display: grid;
   gap: 24px;
+}
+#planning-container h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  #planning-container h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #planning-container h1 {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 768px) {
   #planning-container {
@@ -648,6 +673,16 @@ footer > div #footer-info ul li h2 {
     rooms
 ============= */
 @media (min-width: 768px) {
+  #rooms h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #rooms h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
   #rooms article {
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -700,9 +735,6 @@ footer > div #footer-info ul li h2 {
   #rooms article ul #r5 {
     grid-area: r5;
   }
-}
-#rooms article ul li section {
-  display: grid;
 }
 #rooms article ul li section h1 {
   margin: 16px 0 24px 0;

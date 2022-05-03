@@ -48,7 +48,7 @@
     grid-template-areas: ". grid .";
 
     @include xxl{
-        rid-template-columns: auto 1440px auto;
+        grid-template-columns: auto 1440px auto;
     }
 
     >div{

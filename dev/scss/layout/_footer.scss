@@ -4,6 +4,7 @@
 
 footer{
     
+
     >div{
         display: grid;
         gap: 16px;
@@ -52,4 +53,8 @@ footer{
         }
 
     }
+}
+
+.footer-color{
+    background-color: #52250B;
 }

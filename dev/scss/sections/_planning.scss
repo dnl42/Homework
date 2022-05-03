@@ -8,6 +8,17 @@
 
 #planning-container{
 
+    h1{
+        font-size: rem-calc(32px);
+
+        @include md{
+            font-size: rem-calc(36px);
+        }
+        @include lg{
+            font-size: rem-calc(40px);
+        }
+    }
+
     display: grid;
     gap: 24px;
 

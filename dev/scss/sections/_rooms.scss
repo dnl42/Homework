@@ -6,7 +6,14 @@
     #title{
 
     }
-
+h1{
+    @include md{
+        font-size: rem-calc(36px);
+    }
+    @include lg{
+        font-size: rem-calc(40px);
+    }
+}
     article {
 
         @include md {
@@ -73,7 +80,6 @@
             li {
 
                 section {
-                    display: grid;
                     h1 {
                         margin: 16px 0 24px 0;
                     }
