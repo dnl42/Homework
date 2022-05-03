@@ -616,6 +616,8 @@ footer > div #footer-info ul li h2 {
 }
 #planning-container .planning-grid {
   background-color: #A3A588;
+  display: grid;
+  grid-template-columns: 75% auto;
 }
 
 /* =============
