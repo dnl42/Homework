@@ -12,19 +12,18 @@
 
 
 .content-spacing{
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 24px;
 
     @include md{
-        margin-top: 24px;
+        margin-top: 32px;
     }
 
     @include lg{
-        margin-top: 24px;
+        margin-top: 32px;
     }
 
     @include xxl{
-        margin-top: 24px;
+        margin-top: 32px;
     }
 }
 

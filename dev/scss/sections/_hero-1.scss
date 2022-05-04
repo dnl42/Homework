@@ -17,13 +17,20 @@
             }
         }
        
+        button{
+            background-color: transparent;
+            border: none;
+            font-size: rem-calc(18);
+            font-weight: 700;
+            color: var(--black);
+        }
 
         @include md{
             display: grid;
             grid-template-columns: 50% auto;
         }
         #hero-book{
-            background-color: #AD6D47;
+            background-color: var(--sienna);
 
             @include xxl{
                 grid-template-columns: auto 720px 16px;
@@ -31,7 +38,7 @@
         }
 
         #hero-contact{
-            background-color: #D0A064;
+            background-color: var(--orange);
 
             @include xxl{
                 grid-template-columns: 16px 720px auto;

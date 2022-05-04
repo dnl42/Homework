@@ -3,5 +3,48 @@
 ============= */
 
 #searchbar{
-    
+    >div{
+        form{
+            display: flex;
+            input{
+                width: 100%;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid var(--olive);
+                color: var(--olive);
+                border-radius: 0;
+            }
+
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: var(--olive);
+                opacity: 1; /* Firefox */
+              }
+              
+              :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: var(--olive);
+              }
+              
+              ::-ms-input-placeholder { /* Microsoft Edge */
+                color: var(--olive);
+              }
+
+
+            button{
+                background-color: var(--orange);
+                border-radius: 5px;
+                padding: 4px 8px 3px;
+                margin: 0;
+                border: none;
+
+                @include md{
+                    padding: 7px 12px 6px ;
+        
+                }
+
+
+
+
+            }
+        }
+    }
 }

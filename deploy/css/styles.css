@@ -10,6 +10,16 @@ html {
 /* =============
     Variables
 ============= */
+:root {
+  --cream: #fbf2eb;
+  --olive: #a3a588;
+  --orange: #d0a064;
+  --sienna: #ad6d47;
+  --brown: #522508;
+  --white: #fff;
+  --black: #000;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -361,22 +371,21 @@ ul li {
 }
 
 .content-spacing {
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 24px;
 }
 @media (min-width: 768px) {
   .content-spacing {
-    margin-top: 24px;
+    margin-top: 32px;
   }
 }
 @media (min-width: 1024px) {
   .content-spacing {
-    margin-top: 24px;
+    margin-top: 32px;
   }
 }
 @media (min-width: 1400px) {
   .content-spacing {
-    margin-top: 24px;
+    margin-top: 32px;
   }
 }
 
@@ -452,13 +461,25 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  margin-top: 16px;
+  margin: 0;
   padding: 0;
 }
 
 /* =============
     Buttons
 ============= */
+button {
+  margin: 0;
+  padding: 0;
+}
+
+.orange-button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--brown);
+  padding: 6px 14px;
+}
+
 /* =============
     Forms
 ============= */
@@ -484,10 +505,12 @@ textarea {
     Header
 ============= */
 header div section {
-  background-color: #52250B;
+  background-color: var(--brown);
 }
 header div section img {
-  width: 100%;
+  width: 90%;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* =============
@@ -550,6 +573,13 @@ footer > div #footer-info ul li h2 {
     font-size: 2rem;
   }
 }
+#hero1 article button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--black);
+}
 @media (min-width: 768px) {
   #hero1 article {
     display: grid;
@@ -557,7 +587,7 @@ footer > div #footer-info ul li h2 {
   }
 }
 #hero1 article #hero-book {
-  background-color: #AD6D47;
+  background-color: var(--sienna);
 }
 @media (min-width: 1400px) {
   #hero1 article #hero-book {
@@ -565,7 +595,7 @@ footer > div #footer-info ul li h2 {
   }
 }
 #hero1 article #hero-contact {
-  background-color: #D0A064;
+  background-color: var(--orange);
 }
 @media (min-width: 1400px) {
   #hero1 article #hero-contact {
@@ -578,7 +608,12 @@ footer > div #footer-info ul li h2 {
 ============= */
 #planning-container {
   display: grid;
-  gap: 24px;
+}
+@media (min-width: 768px) {
+  #planning-container {
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". planning .";
+  }
 }
 #planning-container h1 {
   font-size: 2rem;
@@ -591,11 +626,6 @@ footer > div #footer-info ul li h2 {
 @media (min-width: 1024px) {
   #planning-container h1 {
     font-size: 2.5rem;
-  }
-}
-@media (min-width: 768px) {
-  #planning-container {
-    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1400px) {
@@ -615,9 +645,10 @@ footer > div #footer-info ul li h2 {
   }
 }
 #planning-container .planning-grid {
-  background-color: #A3A588;
+  background-color: var(--olive);
   display: grid;
   grid-template-columns: 75% auto;
+  padding-bottom: 16px;
 }
 #planning-container .planning-grid aside img {
   margin-top: 10px;
@@ -625,6 +656,7 @@ footer > div #footer-info ul li h2 {
 #planning-container .planning-spacing {
   margin-left: 16px;
   text-align: center;
+  padding: 16px;
 }
 
 /* =============
@@ -758,3 +790,40 @@ footer > div #footer-info ul li h2 {
 /* =============
     searchbar
 ============= */
+#searchbar > div form {
+  display: flex;
+}
+#searchbar > div form input {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid var(--olive);
+  color: var(--olive);
+  border-radius: 0;
+}
+#searchbar > div form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--olive);
+  opacity: 1;
+  /* Firefox */
+}
+#searchbar > div form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--olive);
+}
+#searchbar > div form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--olive);
+}
+#searchbar > div form button {
+  background-color: var(--orange);
+  border-radius: 5px;
+  padding: 4px 8px 3px;
+  margin: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  #searchbar > div form button {
+    padding: 7px 12px 6px;
+  }
+}

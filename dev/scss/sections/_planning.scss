@@ -4,9 +4,19 @@
 
 
 #planning-container{
+    display: grid;
+    @include md{
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". planning .";
+    }
+
+    
 
 
-
+   
+   
+   
+   
     h1{
         font-size: rem-calc(32px);
 
@@ -18,12 +28,9 @@
         }
     }
 
-    display: grid;
-    gap: 24px;
 
-    @include md{
-        grid-template-columns: 50% auto;
-    }
+
+   
 
     @include xxl{
         grid-template-columns: auto 720px 720px auto;
@@ -43,9 +50,11 @@
     }
 
     .planning-grid{
-        background-color: #A3A588;
+        background-color: var(--olive);
         display: grid;
+        
         grid-template-columns: 75% auto ;
+        padding-bottom: 16px;
 
         aside{
             img{
@@ -57,6 +66,7 @@
     .planning-spacing{
         margin-left: 16px;
         text-align: center;
+        padding: 16px;
     }
 
 }
