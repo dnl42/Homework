@@ -3,59 +3,128 @@
 ============= */
 
 footer{
-    
+    background-color: var(--brown);
+    color: var(--white);
+    padding: 16px 0;
 
-    >div{
+    @include md {
+        padding: 24px 0;
+    }
+
+    @include lg {
+        padding: 48px 0;
+    }
+
+    @include xxl {
+        padding: 64px 0;
+    }
+
+    >div {
         display: grid;
         gap: 16px;
 
-        @include md{
+        @include md {
             grid-template-columns: 50% auto;
             grid-template-areas: "footer-info newsletter"
-            ". social";
+                ". social";
         }
 
-        @include lg{
+        @include lg {
             grid-template-columns: repeat(3, 1fr);
             grid-template-areas: "footer-info newsletter social";
         }
 
-        #footer-info{
 
-            @include md{
+        ul{
+
+            li {
+                margin-top: 24px;
+
+                section {
+                    display: grid;
+                    grid-template-columns: 10% auto;
+                }
+
+                h2 {
+                    font-size: rem-calc(20);
+                    font-weight: 600;
+                    margin-bottom: 24px;
+                }
+
+                address{
+                    font-style: normal;
+                }
+
+                p{
+                    padding-top: 16px;
+                    padding-bottom: 16px;
+                }
+
+            }
+        }
+    }
+
+
+
+        #footer-info {
+
+            @include md {
                 grid-area: footer-info;
+            }
+        }
+
+        #newsletter {
+            @include md {
+                grid-area: newsletter;
+            }
+
+            form{
+                input{
+                    border: none;
+                    background-color: val(--orange);
+                    box-sizing: border-box;
+                    padding: 16px 8px;
+                    border-radius: 0;
+                    margin-bottom: 24px;
+                }
+
+
+                ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: var(--olive);
+                    opacity: 1; /* Firefox */
+                  }
+                  
+                  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                    color: var(--olive);
+                  }
+                  
+                  ::-ms-input-placeholder { /* Microsoft Edge */
+                    color: var(--olive);
+                  }
+            }
+
+        }
+
+
+        #social {
+            @include md {
+                grid-area: social;
             }
 
             ul{
+                display: flex;
+
+                @include lg{
+                    justify-content: flex-end;
+                }
+
                 li{
-                    section{
-                        display: grid;
-                        grid-template-columns: 10% auto;
-                    }
-                    h2{
-                        font-size: rem-calc(16);
+                    margin-right: 20px;
+                    a{
                         
                     }
                 }
             }
         }
 
-        #newsletter{
-            @include md{
-                grid-area: newsletter;
-            }
-        }
-
-
-        #social{
-            @include md{
-                grid-area: social;
-            }
-        }
-
     }
-}
-
-.footer-color{
-    background-color: #52250B;
-}

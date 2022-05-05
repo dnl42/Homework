@@ -7,6 +7,9 @@
 
     }
 h1{
+    color: var(--olive);
+    font-size: rem-calc(24);
+
     @include md{
         font-size: rem-calc(36px);
     }
@@ -80,18 +83,26 @@ h1{
             li {
 
                 section {
-                    h1 {
-                        margin: 16px 0 24px 0;
-                    }
+                    background-color: var(--cream);
+                    padding: 16px;
 
-                    button {
-                        margin-top: 16px;
+                    h1{
+                        font-size: rem-calc(32);
+                        @include md{
+                            font-size: rem-calc(36);
+                        }
+                        @include lg{
+                            font-size: rem-calc(40);
+                        }
+                    }
+                    p{
+                        margin: 12px 0 16px;
                     }
                 }
 
-                    img {
+                img {
                     width: 100%;
-                    }
+                }
             }
 
         }

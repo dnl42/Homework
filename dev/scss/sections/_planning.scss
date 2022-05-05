@@ -5,14 +5,25 @@
 
 #planning-container{
     display: grid;
+
     @include md{
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". planning .";
     }
 
-    
+    @include xl{
+        grid-template-columns: auto 1440px auto;
+    }
 
+    >div{
+        grid-area: planning;
+        display: grid;
+        gap: 24px;
 
+        @include md{
+            grid-template-columns: 50% auto;
+        }
+    }
    
    
    
@@ -28,25 +39,12 @@
         }
     }
 
-
-
-   
-
-    @include xxl{
-        grid-template-columns: auto 720px 720px auto;
-        grid-template-areas: ". history events .";
-    }
-
     #history{
-        @include xxl{
-            grid-area: history;
-        }
+
     }
 
     #events{
-        @include xxl{
-            grid-area: events;
-        }
+
     }
 
     .planning-grid{

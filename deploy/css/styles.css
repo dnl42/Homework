@@ -516,6 +516,26 @@ header div section img {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: var(--brown);
+  color: var(--white);
+  padding: 16px 0;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 24px 0;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 48px 0;
+  }
+}
+@media (min-width: 1400px) {
+  footer {
+    padding: 64px 0;
+  }
+}
 footer > div {
   display: grid;
   gap: 16px;
@@ -532,33 +552,73 @@ footer > div {
     grid-template-areas: "footer-info newsletter social";
   }
 }
-@media (min-width: 768px) {
-  footer > div #footer-info {
-    grid-area: footer-info;
-  }
+footer > div ul li {
+  margin-top: 24px;
 }
-footer > div #footer-info ul li section {
+footer > div ul li section {
   display: grid;
   grid-template-columns: 10% auto;
 }
-footer > div #footer-info ul li h2 {
-  font-size: 1rem;
+footer > div ul li h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+footer > div ul li address {
+  font-style: normal;
+}
+footer > div ul li p {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media (min-width: 768px) {
-  footer > div #newsletter {
+  footer #footer-info {
+    grid-area: footer-info;
+  }
+}
+@media (min-width: 768px) {
+  footer #newsletter {
     grid-area: newsletter;
   }
 }
+footer #newsletter form input {
+  border: none;
+  background-color: val(--orange);
+  box-sizing: border-box;
+  padding: 16px 8px;
+  border-radius: 0;
+  margin-bottom: 24px;
+}
+footer #newsletter form ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--olive);
+  opacity: 1;
+  /* Firefox */
+}
+footer #newsletter form :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--olive);
+}
+footer #newsletter form ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--olive);
+}
 @media (min-width: 768px) {
-  footer > div #social {
+  footer #social {
     grid-area: social;
   }
 }
-
-.footer-color {
-  background-color: #52250B;
+footer #social ul {
+  display: flex;
 }
-
+@media (min-width: 1024px) {
+  footer #social ul {
+    justify-content: flex-end;
+  }
+}
+footer #social ul li {
+  margin-right: 20px;
+}
 /* =============
     Hero-1
 ============= */
@@ -615,6 +675,21 @@ footer > div #footer-info ul li h2 {
     grid-template-areas: ". planning .";
   }
 }
+@media (min-width: 1200px) {
+  #planning-container {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#planning-container > div {
+  grid-area: planning;
+  display: grid;
+  gap: 24px;
+}
+@media (min-width: 768px) {
+  #planning-container > div {
+    grid-template-columns: 50% auto;
+  }
+}
 #planning-container h1 {
   font-size: 2rem;
 }
@@ -626,22 +701,6 @@ footer > div #footer-info ul li h2 {
 @media (min-width: 1024px) {
   #planning-container h1 {
     font-size: 2.5rem;
-  }
-}
-@media (min-width: 1400px) {
-  #planning-container {
-    grid-template-columns: auto 720px 720px auto;
-    grid-template-areas: ". history events .";
-  }
-}
-@media (min-width: 1400px) {
-  #planning-container #history {
-    grid-area: history;
-  }
-}
-@media (min-width: 1400px) {
-  #planning-container #events {
-    grid-area: events;
   }
 }
 #planning-container .planning-grid {
@@ -713,6 +772,10 @@ footer > div #footer-info ul li h2 {
 /* =============
     rooms
 ============= */
+#rooms h1 {
+  color: var(--olive);
+  font-size: 1.5rem;
+}
 @media (min-width: 768px) {
   #rooms h1 {
     font-size: 2.25rem;
@@ -777,11 +840,25 @@ footer > div #footer-info ul li h2 {
     grid-area: r5;
   }
 }
-#rooms article ul li section h1 {
-  margin: 16px 0 24px 0;
+#rooms article ul li section {
+  background-color: var(--cream);
+  padding: 16px;
 }
-#rooms article ul li section button {
-  margin-top: 16px;
+#rooms article ul li section h1 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  #rooms article ul li section h1 {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  #rooms article ul li section h1 {
+    font-size: 2.5rem;
+  }
+}
+#rooms article ul li section p {
+  margin: 12px 0 16px;
 }
 #rooms article ul li img {
   width: 100%;
