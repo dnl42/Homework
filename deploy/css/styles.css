@@ -619,6 +619,12 @@ footer #social ul {
 footer #social ul li {
   margin-right: 20px;
 }
+@media (min-width: 1024px) {
+  footer #social ul li {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
 /* =============
     Hero-1
 ============= */
@@ -666,16 +672,14 @@ footer #social ul li {
 /* =============
     planning
 ============= */
-#planning-container {
-  display: grid;
-}
 @media (min-width: 768px) {
   #planning-container {
+    display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". planning .";
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   #planning-container {
     grid-template-columns: auto 1440px auto;
   }
@@ -705,12 +709,11 @@ footer #social ul li {
 }
 #planning-container .planning-grid {
   background-color: var(--olive);
-  display: grid;
-  grid-template-columns: 75% auto;
-  padding-bottom: 16px;
+  padding: 16px;
+  display: flex;
 }
-#planning-container .planning-grid aside img {
-  margin-top: 10px;
+#planning-container .planning-grid aside {
+  margin-left: auto;
 }
 #planning-container .planning-spacing {
   margin-left: 16px;

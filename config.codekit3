@@ -65,7 +65,7 @@
       "oAP" : "\/deploy\/img\/hero2\/hero-2-doorman.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -78,7 +78,7 @@
       "oAP" : "\/deploy\/img\/hero2\/hero2-chandelier.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -91,7 +91,7 @@
       "oAP" : "\/deploy\/img\/hero2\/hero2-mezz.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -174,7 +174,7 @@
       "oAP" : "\/deploy\/img\/planning\/eventicon.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -197,7 +197,7 @@
       "oAP" : "\/deploy\/img\/planning\/ourhistoryicon.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -233,7 +233,7 @@
       "oAP" : "\/deploy\/img\/rooms&ameneties\/ballroom_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -246,7 +246,7 @@
       "oAP" : "\/deploy\/img\/rooms&ameneties\/bunk_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -259,7 +259,7 @@
       "oAP" : "\/deploy\/img\/rooms&ameneties\/captain_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -272,7 +272,7 @@
       "oAP" : "\/deploy\/img\/rooms&ameneties\/rooftop_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -285,7 +285,7 @@
       "oAP" : "\/deploy\/img\/rooms&ameneties\/standard_mask.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
