@@ -2,55 +2,82 @@
     Hero-1
 ============= */
 
-#hero1{
+#hero1 {
 
-    #heroimg{
+    #heroimg {
         width: 100%;
         height: 40vh;
         background-image: url('../img/hero1/hero1.jpg');
         background-size: cover;
         background-position: center;
 
-        @include lg{
+        @include lg {
             height: 70vh;
-            }
         }
+    }
 
-    article{
+    article {
 
-        h1{
+        h1 {
             font-size: rem-calc(24px);
-            @include lg{
+
+            @include lg {
                 font-size: rem-calc(32px);
             }
-        }
-       
-        button{
-            background-color: transparent;
-            border: none;
-            font-size: rem-calc(18);
-            font-weight: 700;
-            color: var(--black);
+
+            #hero-info-cards {
+
+                display: flex;
+
+                button {
+                    background-color: transparent;
+                    border: none;
+                    font-size: rem-calc(18);
+                    font-weight: 700;
+                    color: var(--black);
+                    margin-left: auto;
+
+                    @include lg {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    img {
+                        @include md {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+
+            }
+
         }
 
-        @include md{
+
+
+        @include md {
             display: grid;
             grid-template-columns: 50% auto;
         }
-        #hero-book{
+
+        #hero-book {
             background-color: var(--sienna);
 
-            @include xxl{
+            @include xxl {
                 grid-template-columns: auto 720px 16px;
             }
         }
 
-        #hero-contact{
+
+
+
+
+        #hero-contact {
             background-color: var(--orange);
 
-            @include xxl{
+            @include xxl {
                 grid-template-columns: 16px 720px auto;
-            } 
+            }
         }
     }
 }

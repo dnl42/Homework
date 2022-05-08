@@ -543,7 +543,7 @@ footer > div {
 @media (min-width: 768px) {
   footer > div {
     grid-template-columns: 50% auto;
-    grid-template-areas: "footer-info newsletter" ". social";
+    grid-template-areas: "footer-info newsletter" "footer-info social";
   }
 }
 @media (min-width: 1024px) {
@@ -556,8 +556,9 @@ footer > div ul li {
   margin-top: 24px;
 }
 footer > div ul li section {
-  display: grid;
-  grid-template-columns: 10% auto;
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
 }
 footer > div ul li h2 {
   font-size: 1.25rem;
@@ -567,9 +568,13 @@ footer > div ul li h2 {
 footer > div ul li address {
   font-style: normal;
 }
+footer > div ul li img {
+  margin-right: 24px;
+}
 footer > div ul li p {
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-left: 24px;
 }
 @media (min-width: 768px) {
   footer #footer-info {
@@ -581,13 +586,16 @@ footer > div ul li p {
     grid-area: newsletter;
   }
 }
+footer #newsletter form {
+  padding-top: 20px;
+}
 footer #newsletter form input {
   border: none;
   background-color: val(--orange);
   box-sizing: border-box;
-  padding: 16px 8px;
+  padding: 16px 16px;
   border-radius: 0;
-  margin-bottom: 24px;
+  margin-right: 16px;
 }
 footer #newsletter form ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -606,6 +614,14 @@ footer #newsletter form ::-ms-input-placeholder {
 @media (min-width: 768px) {
   footer #social {
     grid-area: social;
+    padding-top: 0;
+    margin-top: -100px;
+  }
+}
+@media (min-width: 1024px) {
+  footer #social {
+    margin: 0;
+    text-align: right;
   }
 }
 footer #social ul {
@@ -617,12 +633,12 @@ footer #social ul {
   }
 }
 footer #social ul li {
-  margin-right: 20px;
+  margin-right: 8px;
 }
 @media (min-width: 1024px) {
   footer #social ul li {
     margin-right: 0;
-    margin-left: 20px;
+    margin-left: 16px;
   }
 }
 /* =============
@@ -648,12 +664,27 @@ footer #social ul li {
     font-size: 2rem;
   }
 }
-#hero1 article button {
+#hero1 article h1 #hero-info-cards {
+  display: flex;
+}
+#hero1 article h1 #hero-info-cards button {
   background-color: transparent;
   border: none;
   font-size: 1.125rem;
   font-weight: 700;
   color: var(--black);
+  margin-left: auto;
+}
+@media (min-width: 1024px) {
+  #hero1 article h1 #hero-info-cards button {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  #hero1 article h1 #hero-info-cards button img {
+    margin-left: 8px;
+  }
 }
 @media (min-width: 768px) {
   #hero1 article {
@@ -681,6 +712,10 @@ footer #social ul li {
 /* =============
     planning
 ============= */
+#planning-container {
+  display: flex;
+  align-items: center;
+}
 @media (min-width: 768px) {
   #planning-container {
     display: grid;
@@ -702,6 +737,9 @@ footer #social ul li {
   #planning-container > div {
     grid-template-columns: 50% auto;
   }
+}
+#planning-container > div .circle-container {
+  margin-left: auto;
 }
 #planning-container > div aside {
   height: 85px;
