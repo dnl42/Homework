@@ -2,57 +2,69 @@
     Hero-2
 ============= */
 
-#hero2{
-    @include xxl{
+#hero2 {
+    @include xxl {
         display: grid;
         grid-template-columns: auto 1440px auto;
         grid-template-areas: ". hero2 .";
     }
-        ul{
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-            }
 
-            @include lg{
-                grid-template-columns: 65% auto;
-            }
+    ul {
+        display: grid;
+        grid-template-rows: 50vh 65vh;
 
-            @include xl{
-                grid-template-columns: 60% auto;
-                grid-template-areas: 
+        @include md {
+            grid-template-columns: 50% auto;
+            grid-template-rows: 55vh auto;
+        }
+
+        @include lg {
+            grid-template-columns: 65% auto;
+        }
+
+        @include xl {
+            grid-template-columns: 60% auto;
+            grid-template-areas:
                 "g1 g2"
                 "g1 g3";
-            }
+            grid-template-rows: 50vh 30vh;
+        }
 
-            @include xxl{
-                grid-area: hero2;
-            }
+        @include xxl {
+            grid-area: hero2;
+        }
 
-            li{
-                img{
-                    width: 100%;
-                }
-                
-            }
+        li {
+            background-size: cover;
 
-            #g1{
-                @include xl{
-                    grid-area: g1;
-                }
-            }
+        }
 
-            #g2{
-                @include xl{
-                    grid-area: g2;
-                }  
-            }
-            
+        #g1 {
+            background-image: url('../img/hero2/hero-2-doorman.jpg');
+            background-position: center;
 
-            #g3{
-                 @include xl{
-                    grid-area: g3;
-                }
+            @include xl {
+                grid-area: g1;
             }
         }
+
+        #g2 {
+            background-image: url('../img/hero2/hero2-chandelier.jpg');
+            background-position: center;
+
+            @include xl {
+                grid-area: g2;
+            }
+        }
+
+
+        #g3 {
+            background-image: url('../img/hero2/hero2-mezz.jpg');
+            background-position: center;
+
+            @include xl {
+                grid-area: g3;
+            }
+        }
+    }
 }

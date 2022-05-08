@@ -630,6 +630,15 @@ footer #social ul li {
 ============= */
 #hero1 #heroimg {
   width: 100%;
+  height: 40vh;
+  background-image: url("../img/hero1/hero1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1024px) {
+  #hero1 #heroimg {
+    height: 70vh;
+  }
 }
 #hero1 article h1 {
   font-size: 1.5rem;
@@ -694,6 +703,19 @@ footer #social ul li {
     grid-template-columns: 50% auto;
   }
 }
+#planning-container > div aside {
+  height: 85px;
+  width: 85px;
+  border-radius: 100%;
+  border: 4px solid var(--white);
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  #planning-container > div aside {
+    height: 113px;
+    width: 113px;
+  }
+}
 #planning-container h1 {
   font-size: 2rem;
 }
@@ -706,6 +728,14 @@ footer #social ul li {
   #planning-container h1 {
     font-size: 2.5rem;
   }
+}
+#planning-container #history aside {
+  background-image: url("../img/planning/ourhistoryicon.jpg");
+  background-position: 30% 50%;
+}
+#planning-container #events aside {
+  background-image: url("../img/planning/eventicon.jpg");
+  background-position: center;
 }
 #planning-container .planning-grid {
   background-color: var(--olive);
@@ -731,10 +761,14 @@ footer #social ul li {
     grid-template-areas: ". hero2 .";
   }
 }
+#hero2 ul {
+  display: grid;
+  grid-template-rows: 50vh 65vh;
+}
 @media (min-width: 768px) {
   #hero2 ul {
-    display: grid;
     grid-template-columns: 50% auto;
+    grid-template-rows: 55vh auto;
   }
 }
 @media (min-width: 1024px) {
@@ -746,6 +780,7 @@ footer #social ul li {
   #hero2 ul {
     grid-template-columns: 60% auto;
     grid-template-areas: "g1 g2" "g1 g3";
+    grid-template-rows: 50vh 30vh;
   }
 }
 @media (min-width: 1400px) {
@@ -753,18 +788,30 @@ footer #social ul li {
     grid-area: hero2;
   }
 }
-#hero2 ul li img {
-  width: 100%;
+#hero2 ul li {
+  background-size: cover;
+}
+#hero2 ul #g1 {
+  background-image: url("../img/hero2/hero-2-doorman.jpg");
+  background-position: center;
 }
 @media (min-width: 1200px) {
   #hero2 ul #g1 {
     grid-area: g1;
   }
 }
+#hero2 ul #g2 {
+  background-image: url("../img/hero2/hero2-chandelier.jpg");
+  background-position: center;
+}
 @media (min-width: 1200px) {
   #hero2 ul #g2 {
     grid-area: g2;
   }
+}
+#hero2 ul #g3 {
+  background-image: url("../img/hero2/hero2-mezz.jpg");
+  background-position: center;
 }
 @media (min-width: 1200px) {
   #hero2 ul #g3 {
@@ -818,33 +865,60 @@ footer #social ul li {
     grid-template-areas: "r1 r1 r2 r2 r3 r3" ". r4 r4 r5 r5 .";
   }
 }
+#rooms article ul #r1 aside {
+  background-image: url("../img/rooms&ameneties/captain_mask.jpg");
+}
 @media (min-width: 768px) {
   #rooms article ul #r1 {
     grid-area: r1;
   }
+}
+#rooms article ul #r2 aside {
+  background-image: url("../img/rooms&ameneties/standard_mask.jpg");
 }
 @media (min-width: 768px) {
   #rooms article ul #r2 {
     grid-area: r2;
   }
 }
+#rooms article ul #r3 aside {
+  background-image: url("../img/rooms&ameneties/bunk_mask.jpg");
+}
 @media (min-width: 768px) {
   #rooms article ul #r3 {
     grid-area: r3;
   }
+}
+#rooms article ul #r4 aside {
+  background-image: url("../img/rooms&ameneties/rooftop_mask.jpg");
 }
 @media (min-width: 768px) {
   #rooms article ul #r4 {
     grid-area: r4;
   }
 }
+#rooms article ul #r5 aside {
+  background-image: url("../img/rooms&ameneties/ballroom_mask.jpg");
+}
 @media (min-width: 768px) {
   #rooms article ul #r5 {
     grid-area: r5;
   }
 }
-#rooms article ul li section {
+#rooms article ul li {
   background-color: var(--cream);
+}
+#rooms article ul li aside {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+@media (min-width: 1400px) {
+  #rooms article ul li aside {
+    height: 300px;
+  }
+}
+#rooms article ul li section {
   padding: 16px;
 }
 #rooms article ul li section h1 {
@@ -862,9 +936,6 @@ footer #social ul li {
 }
 #rooms article ul li section p {
   margin: 12px 0 16px;
-}
-#rooms article ul li img {
-  width: 100%;
 }
 
 /* =============

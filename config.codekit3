@@ -70,6 +70,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/hero2\/hero2-chandelier.jpg" : {
+      "ft" : 16384,
+      "iS" : 116908,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero2\/hero2-chandelier.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/hero2\/hero2-mezz.jpg" : {
+      "ft" : 16384,
+      "iS" : 229624,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/hero2\/hero2-mezz.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/icons\/arrowicon.svg" : {
       "ft" : 2097152,
       "miP" : 0,

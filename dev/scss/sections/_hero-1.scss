@@ -6,7 +6,15 @@
 
     #heroimg{
         width: 100%;
-             }
+        height: 40vh;
+        background-image: url('../img/hero1/hero1.jpg');
+        background-size: cover;
+        background-position: center;
+
+        @include lg{
+            height: 70vh;
+            }
+        }
 
     article{
 

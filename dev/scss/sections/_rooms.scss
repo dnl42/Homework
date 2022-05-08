@@ -51,39 +51,65 @@ h1{
             }
 
             #r1 {
+                aside{
+                    background-image: url('../img/rooms&ameneties/captain_mask.jpg');
+                }
                 @include md {
                     grid-area: r1;
                 }
             }
 
             #r2 {
+                aside{
+                    background-image: url('../img/rooms&ameneties/standard_mask.jpg');
+                }
                 @include md {
                     grid-area: r2;
                 }
             }
 
             #r3 {
+                aside{
+                    background-image: url('../img/rooms&ameneties/bunk_mask.jpg');
+                }
                 @include md {
                     grid-area: r3;
                 }
             }
 
             #r4 {
+                aside{
+                    background-image: url('../img/rooms&ameneties/rooftop_mask.jpg');
+                }
                 @include md {
                     grid-area: r4;
                 }
             }
 
             #r5 {
+                aside{
+                    background-image: url('../img/rooms&ameneties/ballroom_mask.jpg');
+                }
                 @include md {
                     grid-area: r5;
                 }
             }
 
             li {
+                background-color: var(--cream);
+
+                aside{
+                    height: 200px;
+                    background-size: cover;
+                    background-position: center;
+
+                    @include xxl{
+                        height: 300px;
+                    }
+                }
 
                 section {
-                    background-color: var(--cream);
+                    
                     padding: 16px;
 
                     h1{
@@ -100,9 +126,6 @@ h1{
                     }
                 }
 
-                img {
-                    width: 100%;
-                }
             }
 
         }
