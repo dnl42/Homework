@@ -1,3 +1,87 @@
 /* =============
     Navigation
 ============= */
+a:link, a:visited{
+    text-decoration: none;
+    transition: 0.25;
+}
+
+nav{
+    // display: none;
+	background-color: var(--olive);
+	height: 100vh;
+	padding: 16px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 50vw;
+    box-sizing: border-box;
+
+	@include lg {
+		// background-color: var(--white);
+		display: block;
+		height: 100%;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+
+    aside{
+        display: flex;
+        justify-content: flex-end;
+
+        @include lg{
+            display: none;
+        }
+
+        button{
+            background-color: transparent;
+            border: none;
+            color: var(--white);
+        }
+    }
+
+    section{
+
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        height: 100%;
+
+        @include lg{
+            display: block;
+            margin-top: 0;
+        }
+
+        ul{
+            @include lg{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+            }
+
+            li{
+
+                @include lg{
+                    margin-left: 16px;
+                }
+    
+                a:link, a:visited{
+                    text-decoration: none;
+                    transform: 0.25
+                    color var(--white);
+                    padding: 16px;
+                    display: inline-block;
+    
+                    &:hover, &:active{
+                        color: var(--orange);
+    
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

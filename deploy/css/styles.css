@@ -444,6 +444,10 @@ ul li {
   }
 }
 
+.show-menu {
+  display: block !important;
+}
+
 /* =============
     Typography
 ============= */
@@ -479,6 +483,9 @@ button {
   color: var(--brown);
   padding: 6px 14px;
 }
+.orange-button:hover {
+  background-color: var(--olive);
+}
 
 /* =============
     Forms
@@ -501,9 +508,96 @@ textarea {
 /* =============
     Navigation
 ============= */
+a:link, a:visited {
+  text-decoration: none;
+  transition: 0.25;
+}
+
+nav {
+  background-color: var(--olive);
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  box-sizing: border-box;
+}
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+nav aside {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 1024px) {
+  nav aside {
+    display: none;
+  }
+}
+nav aside button {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+nav section {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  height: 100%;
+}
+@media (min-width: 1024px) {
+  nav section {
+    display: block;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  nav section ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  nav section ul li {
+    margin-left: 16px;
+  }
+}
+nav section ul li a:link, nav section ul li a:visited {
+  text-decoration: none;
+  transform: 0.25 color var(--white);
+  padding: 16px;
+  display: inline-block;
+}
+nav section ul li a:link:hover, nav section ul li a:link:active, nav section ul li a:visited:hover, nav section ul li a:visited:active {
+  color: var(--orange);
+}
+
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+header div #burger-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  header div #burger-container {
+    display: none;
+  }
+}
 header div section {
   background-color: var(--brown);
 }
@@ -554,6 +648,14 @@ footer > div {
 }
 footer > div ul li {
   margin-top: 24px;
+}
+footer > div ul li a:link, footer > div ul li a:visited {
+  color: var(--orange);
+  transition: 0.25;
+  text-decoration: none;
+}
+footer > div ul li a:link a:hover, footer > div ul li a:link a:active, footer > div ul li a:visited a:hover, footer > div ul li a:visited a:active {
+  color: var(--white);
 }
 footer > div ul li section {
   display: flex;
@@ -640,6 +742,14 @@ footer #social ul li {
     margin-right: 0;
     margin-left: 16px;
   }
+}
+footer #social ul li a:link, footer #social ul li a:visitied {
+  color: var(--white);
+  font-size: 1.875rem;
+  transition: 0.25s;
+}
+footer #social ul li a:link:hover, footer #social ul li a:link:active, footer #social ul li a:visitied:hover, footer #social ul li a:visitied:active {
+  color: var(--olive);
 }
 /* =============
     Hero-1
@@ -979,6 +1089,15 @@ footer #social ul li {
 /* =============
     searchbar
 ============= */
+#searchbar {
+  margin-top: 76px;
+  padding-top: 16px;
+}
+@media (min-width: 1024px) {
+  #searchbar {
+    padding-top: 24px;
+  }
+}
 #searchbar > div form {
   display: flex;
 }
@@ -1010,9 +1129,14 @@ footer #social ul li {
   padding: 4px 8px 3px;
   margin: 0;
   border: none;
+  cursor: pointer;
+  transition: 0.25s;
 }
 @media (min-width: 768px) {
   #searchbar > div form button {
     padding: 7px 12px 6px;
   }
+}
+#searchbar > div form button:hover {
+  background-color: var(--olive);
 }

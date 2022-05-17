@@ -41,6 +41,16 @@ footer{
             li {
                 margin-top: 24px;
 
+                a:link, a:visited{
+                    color: var(--orange);
+                    transition: 0.25;
+                    text-decoration: none;
+
+                    a:hover, a:active{
+                        color: var(--white);
+                    }
+                }
+
                 section {
                     // display: grid;
                     // grid-template-columns: 10% auto;
@@ -144,6 +154,17 @@ footer{
                         margin-right: 0;
                         margin-left: 16px;
                     }
+
+                    a:link, a:visitied{
+                        color: var(--white);
+                        font-size: rem-calc(30);
+                        transition: 00.25s;
+
+                        &:hover, &:active{
+                            color: var(--olive);
+                        }
+                    }
+
 
                     a{
 

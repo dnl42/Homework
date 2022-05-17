@@ -3,8 +3,27 @@
 ============= */
 
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 
     div{
+
+        #logo-container{
+
+        }
+
+        #burger-container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            @include lg{
+                display: none;
+            }
+        }
+
         section{
             background-color: var(--brown);
             img{

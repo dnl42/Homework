@@ -3,6 +3,13 @@
 ============= */
 
 #searchbar{
+    margin-top: 76px;
+    padding-top: 16px;
+
+    @include lg{
+        padding-top: 24px;
+    }
+
     >div{
         form{
             display: flex;
@@ -35,13 +42,17 @@
                 padding: 4px 8px 3px;
                 margin: 0;
                 border: none;
+                cursor: pointer;
+                transition: 0.25s;
 
                 @include md{
                     padding: 7px 12px 6px ;
         
                 }
 
-
+                &:hover{
+                    background-color: var(--olive);
+                }
 
 
             }
